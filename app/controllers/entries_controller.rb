@@ -18,6 +18,7 @@ class EntriesController < ApplicationController
   # GET /entries/new
   def new
     @entry = Entry.new
+    @entry.Fecha = @entry.created_at
   end
 
   # GET /entries/1/edit

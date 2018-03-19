@@ -27,8 +27,9 @@
   </div>
 
   <div class="field">
-    <%= f.hidden field :Fecha %>
+    <%= f.date_select :Fecha , { :discard_day => true, :discard_month => true, :discard_year => true }%>
   </div>
+
 
   <div class="actions">
     <%= f.submit %>
