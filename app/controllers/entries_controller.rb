@@ -4,12 +4,15 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.all
+    @entries = Entry.all.order(created_at: :desc)
   end
 
   # GET /entries/1
   # GET /entries/1.json
   def show
+    @comment = Comment.new
+    @comment.entry = @entry
+
   end
 
   # GET /entries/new

@@ -1,4 +1,7 @@
 class Comment < ApplicationRecord
-  attr_accessor :Creador, :Comentario
+  belongs_to :entry
+  validates :entry, presence: true
+  validates :Creador, presence: true
+  validates :Comentario, presence: true
 
 end

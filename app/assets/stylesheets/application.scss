@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.welcome-title{
-  color: red;
+.fixed-panel {
+  min-height: 10;
+  max-height: 10;
 }
