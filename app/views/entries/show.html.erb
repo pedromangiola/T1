@@ -20,8 +20,9 @@
   <%= @entry.Cuerpo %>
 </p>
 
-
+<% if current_user != nil %>
 <%= link_to 'Edit', edit_entry_path(@entry) %>
+<%end%>
 <br>
 
 <div class=" col-md-9 col-lg-5 ">

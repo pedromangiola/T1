@@ -45,6 +45,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  config.action_mailer.default_url_options = { host: 'stark-tor-72613.herokuapp.com', port: 80 }
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
