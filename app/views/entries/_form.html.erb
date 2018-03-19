@@ -13,25 +13,27 @@
 
   <div class="field">
     <%= f.label :Titulo %>
-    <%= f.text_field :Titulo %>
+    <%= f.text_field :Titulo, autofocus: true, class: "form-control"%>
   </div>
 
   <div class="field">
     <%= f.label :Bajada %>
-    <%= f.text_area :Bajada, maxlength: 200 %>
+    <%= f.text_area :Bajada, maxlength: 200, autofocus: true, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :Cuerpo %>
-    <%= f.text_area :Cuerpo %>
+    <%= f.text_area :Cuerpo, autofocus: true, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.date_select :Fecha , { :discard_day => true, :discard_month => true, :discard_year => true }%>
   </div>
 
+<br>
+<br>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  class: 'btn btn-primary'%>
   </div>
 <% end %>

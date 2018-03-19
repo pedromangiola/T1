@@ -1,8 +1,10 @@
 <div class="container">
-<h1>New Entry</h1>
+<br>
+<%= link_to 'Volver la inicio', entries_path, class: "btn btn-link"%>
+
+<h1>Nueva noticia</h1>
 
 <%= render 'form', entry: @entry %>
 
-<%= link_to 'Back', entries_path %>
 
 </div>
