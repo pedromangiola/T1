@@ -4,7 +4,7 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.all.order(created_at: :desc)
+    @entries = Entry.all.order(created_at: :desc).limit(10)
   end
 
   # GET /entries/1
